@@ -5,7 +5,7 @@ import { STATIC_QUESTION_BANK } from "../data/questionBank";
 import { STATIC_SCENARIO_BANK } from "../data/scenarioBank";
 
 // Only initialize AI if API key is available
-const apiKey = process.env.API_KEY;
+const apiKey = process.env.GEMINI_API_KEY;
 const ai = apiKey ? new GoogleGenAI({ apiKey }) : null;
 const modelName = 'gemini-2.5-flash';
 
