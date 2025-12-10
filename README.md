@@ -14,7 +14,9 @@ View your app in AI Studio: https://ai.studio/apps/drive/1E5Pn3GZPj2Tbh4Qn0TC7Xs
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+2. (Optional) Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+   - The app works without an API key using built-in content
+   - With an API key, you get AI-generated questions and scenarios for more variety
 3. Run the app:
    `npm run dev`
 
@@ -32,10 +34,11 @@ View your app in AI Studio: https://ai.studio/apps/drive/1E5Pn3GZPj2Tbh4Qn0TC7Xs
    vercel
    ```
 
-3. Set environment variable in Vercel dashboard:
+3. (Optional) Set environment variable in Vercel dashboard for AI-generated content:
    - Go to your project settings on Vercel
    - Navigate to "Environment Variables"
    - Add `GEMINI_API_KEY` with your API key value
+   - Note: The app works without this, using built-in content
 
 ### Option 2: Deploy via Vercel Dashboard
 
@@ -43,8 +46,9 @@ View your app in AI Studio: https://ai.studio/apps/drive/1E5Pn3GZPj2Tbh4Qn0TC7Xs
 2. Go to [vercel.com](https://vercel.com) and sign in
 3. Click "Add New Project"
 4. Import your GitHub repository
-5. Set environment variable:
+5. (Optional) Set environment variable for AI-generated content:
    - Add `GEMINI_API_KEY` with your API key value
+   - Note: The app works without this, using built-in content
 6. Click "Deploy"
 
 The project includes a `vercel.json` configuration file that tells Vercel how to build and deploy the application.
